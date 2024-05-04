@@ -1,6 +1,14 @@
 import React from "react";
 import {
   SiAdobe,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+  SiAdobelightroom,
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiAdobeaudition,
+  SiDavinciresolve,
+  SiCoreldraw,
   SiApple,
   SiFacebook,
   SiGoogle,
@@ -10,10 +18,11 @@ import {
   SiSpotify,
   SiTiktok,
 } from "react-icons/si";
+import { LuClapperboard } from "react-icons/lu";
 import { useAnimate } from "framer-motion";
 export const Example = () => {
   return (
-    <div className="px-4 py-4 rounded-xl">
+    <div className="">
       <div className="mx-auto max-w-7xl">
         <ClipPathLinks />
       </div>
@@ -23,21 +32,21 @@ export const Example = () => {
 
 export const ClipPathLinks = () => {
   return (
-    <div className="divide-y divide-neutral-900 border border-neutral-900">
+    <div className="divide-y rounded-xl divide-neutral-900 border border-neutral-900">
       <div className="grid grid-cols-2 divide-x divide-neutral-900">
-        <LinkBox Icon={SiGoogle} href="#" />
-        <LinkBox Icon={SiShopify} href="#" />
+        <LinkBox Icon={SiAdobephotoshop} href="#" />
+        <LinkBox Icon={SiAdobeaftereffects} href="#" />
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900">
-        <LinkBox Icon={SiApple} href="#" />
-        <LinkBox Icon={SiSoundcloud} href="#" />
-        <LinkBox Icon={SiAdobe} href="#" />
-        <LinkBox Icon={SiFacebook} href="#" />
+        <LinkBox Icon={SiAdobeaudition} href="#" />
+        <LinkBox Icon={SiAdobeillustrator} href="#" />
+        <LinkBox Icon={SiAdobelightroom} href="#" />
+        <LinkBox Icon={SiAdobepremierepro} href="#" />
       </div>
       <div className="grid grid-cols-3 divide-x divide-neutral-900">
-        <LinkBox Icon={SiTiktok} href="#" />
-        <LinkBox Icon={SiSpotify} href="#" />
-        <LinkBox Icon={SiLinkedin} href="#" />
+        <LinkBox Icon={SiDavinciresolve} href="#" />
+        <LinkBox Icon={SiCoreldraw} href="#" />
+        <LinkBox Icon={LuClapperboard} href="#" />
       </div>
     </div>
   );
@@ -121,7 +130,7 @@ const LinkBox = ({ Icon, href }) => {
       onMouseLeave={(e) => {
         handleMouseLeave(e);
       }}
-      className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
+      className="relative grid h-16 w-full place-content-center sm:h-28 md:h-26"
     >
       <Icon className="text-xl sm:text-3xl lg:text-4xl" />
 
@@ -130,7 +139,7 @@ const LinkBox = ({ Icon, href }) => {
         style={{
           clipPath: BOTTOM_RIGHT_CLIP,
         }}
-        className="absolute inset-0 grid place-content-center bg-white text-white hover:text-black"
+        className="absolute rounded-md inset-0 grid place-content-center bg-white text-white hover:text-black"
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
