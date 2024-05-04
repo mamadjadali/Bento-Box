@@ -30,14 +30,15 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 		<NavBar/>
 		<div class="flex w-full items-center justify-center p-6">
-			<div class="grid h-full w-full grid-cols-3 md:grid-rows-3 grid-rows-6 gap-3">
-				<div class="md:col-span-2 md:row-span-1 col-span-3 flex-col border border-gray-600/50 bg-neutral-50/5 backdrop-blur rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
+			<div class="grid h-full w-full grid-cols-3 md:grid-rows-3 grid-rows-5 gap-3">
+				<div class="md:col-span-2 md:row-span-1 col-span-full flex-col border border-gray-600/50 bg-neutral-50/5 backdrop-blur rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
 					<div class="pt-3 m-7 justify-start flex items-center">
-						<div class="w-12 h-12 rounded-full  bg-slate-400/50 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-white-400/50 mr-2 flex justify-center items-center">
-						<img class="m-auto" src="../../public/sticker.png" alt="">
+						<div class="hidden md:block w-12 h-12 rounded-full  bg-slate-400/50 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-white-400/50 mr-2 justify-center items-center">
+						<img class="m-auto" draggable="false" src="../../public/sticker.png" alt="">
 						</div>
-						<p class="font-mono text-sm">Hi, I'm Mohsen
-							<br/>Videographer | Photographer
+						<p class="font-medium text-sm">
+							Hi, I'm Mohsen <br>
+							<span class="hidden md:block text-[12px]">Videographer | Photographer</span>
 						</p>
 						<div class="flex items-center ml-auto">
 							<div class="w-9 h-9 rounded-md bg-neutral-50/10 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur border border-gray-500/10 mr-2 flex justify-center items-center">
@@ -48,15 +49,16 @@ import Layout from '../layouts/Layout.astro';
 							</div>
 					</div>
 					<div class="m-3 ml-5 justify-center items-center">
-						<p class="font-semibold text-2xl mb-5">Passionate and creative video producer</p>
-						<p class="font-normal text-sm text-justify text-[#919398] mr-16 mb-5">
+						<div class="font-sans text-2xl ml-3 mb-5">Passionate and creative video producer</div>
+						<p class="font-normal text-sm text-justify text-[#919398] ml-3 mr-16 mb-5">
 							with a keen eye for storytelling and a knack for bringing ideas to life. With 8 years of experience in the industry, I thrive in fast-paced environments where I can collaborate with teams to produce engaging visual content.
 						</p>
 					</div>
 				</div>
-				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-tr from-gray-300 to-[#1B98E0] rounded-[30px] rounded-bl-[4px] rounded-tr-xl flex justify-center items-end relative">
-						<img class="absolute bottom-0 h-full" src="../../public/Group 6.png" />
-				</div>
+				<div class="md:col-span-1 md:row-span-1 sm:h-auto hidden sm:block col-span-3 relative overflow-hidden bg-blue-100/30 border border-gray-500/50 backdrop-blur rounded-[30px] rounded-bl-[4px] rounded-tr-xl justify-center items-end">
+						<img class="absolute z-10 bottom-0 h-full" draggable="false" src="../../public/Group 6.png" />
+						<div class=""></div>
+					</div>
 				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-r from-emerald-500 to-emerald-900 rounded-[30px] flex justify-center items-center relative rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">
 					<div class="absolute top-0 left-0 p-7 text-white font-semibold"> Currently I'm Working at 140.</div>
 					<img />
@@ -66,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<div class="md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex justify-center items-center rounded-l-xl rounded-br-[4px]">Skills</div>
 				<div class="md:col-span-1 md:row-span-1 col-span-3 overflow-hidden bg-blue-400/30 border border-gray-500/50 backdrop-blur rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
-					<img class="absolute top-[5px] right-0 z-10 h-full animate-floatUpDown pointer-events-none" src="../../public/Group 7.png" />
+					<img class="absolute top-[5px] right-0 z-10 h-full animate-floatUpDown pointer-events-none" draggable="false" src="../../public/Group 7.png" />
 					<div class="absolute top-0 left-0 p-5 text-white font-normal">
 						Contact me<br/>
 						<span class="font-normal text-sm text-justify text-[#919398]">Make a Call or email.</span>
