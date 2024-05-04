@@ -5,25 +5,34 @@ import Card from '../components/Card.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<div class="flex h-screen w-full items-center justify-center p-6">
-			<div class="grid h-full w-full grid-cols-3 grid-rows-3 gap-3">
-				<div class="col-span-2 row-span-1 flex-col  bg-gradient-to-r from-slate-900 to-slate-700 rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
-					<div class="pt-3 m-5 justify-start">
-						<p class="font-mono text-sm">Hi, I'm Mohsen</p>
-						<p class="font-normal text-[12px]">Videographer | Photographer</p>
+		<div class="flex w-full items-center justify-center p-6">
+			<div class="grid h-full w-full grid-cols-3 md:grid-rows-3 grid-rows-6 gap-3">
+				<div class="md:col-span-2 md:row-span-1 col-span-3 flex-col border border-gray-600 bg-gradient-to-r from-slate-900 to-slate-700 rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
+					<div class="pt-5 m-5 justify-start flex items-center">
+						<p class="font-mono text-sm">Hi, I'm Mohsen
+							<br/>Videographer | Photographer
+						</p>
+						<div class="flex items-center ml-auto">
+							<svg class="h-6 w-6 mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+							<svg class="h-7 w-7 mr-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"></path></svg>
+						</div>
 					</div>
 					<div class="m-3 ml-5 justify-center items-center">
 						<p class="font-semibold text-2xl mb-5">Passionate and creative video producer</p>
-						<p class="font-normal text-sm text-justify text-[#919398] mr-16">
+						<p class="font-normal text-sm text-justify text-[#919398] mr-16 mb-5">
 							with a keen eye for storytelling and a knack for bringing ideas to life. With 8 years of experience in the industry, I thrive in fast-paced environments where I can collaborate with teams to produce engaging visual content.
 						</p>
 					</div>
 				</div>
-				<div class="col-span-1 row-span-1 bg-gradient-to-r from-amber-200 to-yellow-400 rounded-[30px] flex justify-center items-center rounded-bl-[4px] rounded-tr-xl">Avatar</div>
-				<div class="col-span-1 row-span-1 bg-gradient-to-r from-emerald-500 to-emerald-900 rounded-[30px] flex justify-center items-center rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">Currently</div>
-				<div class="col-span-2 row-span-1 bg-gradient-to-r from-slate-900 to-slate-700 rounded-[30px] flex justify-center items-center rounded-l-[4px] rounded-br-xl ">Best Work</div>
-				<div class="col-span-2 row-span-1 bg-gradient-to-r from-slate-900 to-slate-700 rounded-[30px] flex justify-center items-center rounded-l-xl rounded-br-[4px]">Skills</div>
-				<div class="col-span-1 row-span-1 bg-gradient-to-r from-red-500 to-orange-500 rounded-[30px] flex justify-center items-center rounded-bl-[4px] rounded-tr-xl">Contact me</div>
+				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-r from-amber-200 to-yellow-400 rounded-[30px] rounded-bl-[4px] rounded-tr-xl flex justify-center items-end relative">
+						<img class="absolute bottom-0 h-full" src="../../public/Group 6.png" />
+				</div>
+				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-r from-emerald-500 to-emerald-900 rounded-[30px] flex justify-center items-center rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">Currently</div>
+				<div class="md:col-span-2 md:row-span-1 col-span-3 bg-gradient-to-r from-slate-900 to-slate-700 border border-gray-600 rounded-[30px] flex justify-center items-center rounded-l-[4px] rounded-br-xl ">Best Work</div>
+				<div class="md:col-span-2 md:row-span-1 col-span-3 bg-gradient-to-r from-slate-900 to-slate-700 border border-gray-600 rounded-[30px] flex justify-center items-center rounded-l-xl rounded-br-[4px]">Skills</div>
+				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
+					<img class="absolute bottom-0 h-full" src="../../public/Group 7.png" />
+				</div>
 			</div>
 		</div>
 	</main>
@@ -38,52 +47,5 @@ import Card from '../components/Card.astro';
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
 	}
 </style>
