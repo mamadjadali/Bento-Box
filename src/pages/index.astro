@@ -4,9 +4,32 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+			<svg
+				class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] animate-slide"
+				viewBox="0 0 1155 678">
+				<path
+					fill="url(#ff6100-d39d-499b-bd42-aeeafbcc24)"
+					fill-opacity=".3"
+					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+				</path>
+				<defs>
+					<linearGradient
+						id="ff6100-d39d-499b-bd42-aeeafbcc24"
+						x1="1155.49"
+						x2="-78.208"
+						y1=".177"
+						y2="474.645"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#003049"></stop>
+						<stop offset="1" stop-color="#EAE2B7"></stop>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
 		<div class="flex w-full items-center justify-center p-6">
 			<div class="grid h-full w-full grid-cols-3 md:grid-rows-3 grid-rows-6 gap-3">
-				<div class="md:col-span-2 md:row-span-1 col-span-3 flex-col border border-gray-600 bg-gradient-to-r from-[#080808] to-slate-700 rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
+				<div class="md:col-span-2 md:row-span-1 col-span-3 flex-col border border-gray-600/50 bg-neutral-50/5 backdrop-blur rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
 					<div class="pt-5 m-5 justify-start flex items-center">
 						<p class="font-mono text-sm">Hi, I'm Mohsen
 							<br/>Videographer | Photographer
@@ -33,7 +56,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="md:col-span-2 md:row-span-1 col-span-3 relative bg-gradient-to-r from-[#fdcfcd] to-[#fe899a] border border-l-neutral-400 rounded-[30px] flex justify-center items-center rounded-l-[4px] rounded-br-xl ">
 					<img class=" object-cover h-full rounded-l-[4px] rounded-br-xl rounded-[30px]" src="../../public/best.png"/>
 				</div>
-				<div class="md:col-span-2 md:row-span-1 col-span-3 bg-gradient-to-r from-slate-700 to-[#080808] border border-gray-600 rounded-[30px] flex justify-center items-center rounded-l-xl rounded-br-[4px]">Skills</div>
+				<div class="md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex justify-center items-center rounded-l-xl rounded-br-[4px]">Skills</div>
 				<div class="md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-tl from-[#1B98E0] to-[#13293D] rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
 					<img class="absolute bottom-0 h-full" src="../../public/Group 7.png" />
 					<div class="absolute top-0 left-0 p-5 text-white font-bold">Contact me</div>
@@ -44,10 +67,55 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</div>
+		<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+			<svg
+				class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem] animate-slide"
+				viewBox="0 0 1155 678">
+				<path
+					fill="url(#b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1)"
+					fill-opacity=".3"
+					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+				</path>
+				<defs>
+					<linearGradient
+						id="b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1"
+						x1="1155.49"
+						x2="-78.208"
+						y1=".177"
+						y2="474.645"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#003049">
+							<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
+						</stop>
+						<stop offset="1" stop-color="#003049">
+							<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
+						</stop>
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
 	</main>
 </Layout>
 
 <style>
+	@keyframes slide {
+		0% {
+			left: calc(50% - 70rem);
+			transform: rotate(0deg);
+		}
+		50% {
+			left: calc(50% - 30rem);
+			transform: rotate(-180deg);
+		}
+		100% {
+			left: calc(50% - 70rem);
+			transform: rotate(0deg);
+		}
+	}
+
+	.animate-slide {
+		animation: slide 25s infinite;
+	}
 	main {
 		margin: auto;
 		padding: 1rem;
