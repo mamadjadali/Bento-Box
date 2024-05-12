@@ -1,5 +1,4 @@
 ---
-import { Example } from '../components/ClipPathLink';
 import NavBar from '../components/NavBar.astro';
 import Layout from '../layouts/Layout.astro';
 ---
@@ -37,15 +36,15 @@ import Layout from '../layouts/Layout.astro';
 						<div class="hidden md:block w-12 h-12 rounded-full  bg-slate-400/50 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-white-400/50 mr-2 justify-center items-center">
 						<img class="m-auto" draggable="false" src="../../public/sticker.png" alt="">
 						</div>
-						<p class="font-medium text-sm">
+						<p class="font-sans text-sm">
 							Hi, I'm Mohsen <br>
 							<span class="hidden md:block text-[12px]">Videographer | Photographer</span>
 						</p>
 						<div class="flex items-center ml-auto">
-							<div class="w-9 h-9 rounded-md bg-neutral-50/10 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur border border-gray-500/10 mr-2 flex justify-center items-center">
+							<div class="w-9 h-9 rounded-md bg-neutral-50/5 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur  mr-2 flex justify-center items-center">
 								<svg class="w-5 h-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
 							</div>
-							<div class="w-9 h-9 rounded-md bg-neutral-50/10 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur border border-gray-500/10 mr-2 flex justify-center items-center">
+							<div class="w-9 h-9 rounded-md bg-neutral-50/5 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur mr-2 flex justify-center items-center">
 								<svg class="h-5 w-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>							</div>
 							</div>
 					</div>
@@ -57,22 +56,20 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 				<div class="md:col-span-1 md:row-span-1 sm:h-80 hidden sm:block col-span-3 relative overflow-hidden bg-blue-100/30 border border-gray-500/50 backdrop-blur rounded-[30px] rounded-bl-[4px] rounded-tr-xl justify-center items-end">
-						<img class="absolute z-10 bottom-0" draggable="false" src="../../public/Group 6.png" />
+						<img class="h-full object-cover grayscale" draggable="false" src="../../public/M.jpg" />
 					</div>
-				<div class="h-80 md:col-span-1 md:row-span-1 col-span-3 bg-gradient-to-r from-emerald-500 to-emerald-900 rounded-[30px] flex justify-center items-center relative rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">
+				<div class="h-80 md:col-span-1 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex justify-center items-center relative rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">
 					<div class="absolute top-0 left-0 p-7 text-white font-semibold"> Currently I'm Working at 140.</div>
 					<img />
 				</div>
-				<div class="h-80 md:col-span-2 md:row-span-1 col-span-3 relative bg-gradient-to-r from-[#fdcfcd] to-[#fe899a] border border-l-neutral-400 rounded-[30px] flex justify-center items-center rounded-l-[4px] rounded-br-xl ">
-					<img class="object-cover h-full rounded-l-[4px] rounded-br-xl rounded-[30px]" src="../../public/best.png"/>
+				<div class="h-80 md:col-span-2 md:row-span-1 col-span-3 relative bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex justify-center items-center rounded-l-[4px] rounded-br-xl ">
+					<!-- <img class="object-cover h-full rounded-l-[4px] rounded-br-xl rounded-[30px]" src="../../public/best.png"/> -->
 				</div>
-				<div class="md:col-span-3 md:row-span-1 col-span-3 justify-center items-center">
-					<Example client:load />
-				</div>
+
 				<div class="h-80 md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] justify-center items-center rounded-l-xl rounded-br-[4px]">
 
 				</div>
-				<div class="h-80 md:col-span-1 md:row-span-1 col-span-3 overflow-hidden bg-blue-400/30 border border-gray-500/50 backdrop-blur rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
+				<div class="h-80 md:col-span-1 md:row-span-1 col-span-3 overflow-hidden bg-neutral-50/5 border border-gray-600/50 backdrop-blur rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
 					<img class="absolute top-[5px] right-0 z-10 h-full animate-floatUpDown pointer-events-none" draggable="false" src="../../public/Group 7.png" />
 					<div class="absolute top-0 left-0 p-5 text-white font-normal">
 						Contact me<br/>
