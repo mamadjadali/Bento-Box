@@ -1,140 +1,77 @@
 ---
 import NavBar from '../components/NavBar.astro';
+import GridFive from '../components/ui/Grid-five';
+import GridFour from '../components/ui/Grid-four';
+import GridOne from '../components/ui/Grid-one';
+import GridSix from '../components/ui/Grid-six';
+import GridThree from '../components/ui/Grid-three';
+import GridTwo from '../components/ui/Grid-two';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-			<svg
-				class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] animate-slide"
-				viewBox="0 0 1155 678">
-				<path
-					fill="url(#ff6100-d39d-499b-bd42-aeeafbcc24)"
-					fill-opacity=".3"
-					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
-				</path>
-				<defs>
-					<linearGradient
-						id="ff6100-d39d-499b-bd42-aeeafbcc24"
-						x1="1155.49"
-						x2="-78.208"
-						y1=".177"
-						y2="474.645"
-						gradientUnits="userSpaceOnUse">
-						<stop stop-color="#003049"></stop>
-						<stop offset="1" stop-color="#EAE2B7"></stop>
-					</linearGradient>
-				</defs>
-			</svg>
-		</div>
+	<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+		<svg
+			class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] animate-slide"
+			viewBox="0 0 1155 678">
+			<path
+				fill="url(#ff6100-d39d-499b-bd42-aeeafbcc24)"
+				fill-opacity=".3"
+				d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+			</path>
+			<defs>
+				<linearGradient
+					id="ff6100-d39d-499b-bd42-aeeafbcc24"
+					x1="1155.49"
+					x2="-78.208"
+					y1=".177"
+					y2="474.645"
+					gradientUnits="userSpaceOnUse">
+					<stop stop-color="#003049"></stop>
+					<stop offset="1" stop-color="#EAE2B7"></stop>
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
 		<NavBar/>
 		<div class="flex w-full items-center justify-center p-6">
 			<div class="grid h-full w-full grid-cols-3 md:grid-rows-4 gap-3">
-				<div class="sm:h-80 md:col-span-2 md:row-span-1 col-span-full  flex-col border border-gray-600/50 bg-neutral-50/5 backdrop-blur rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
-					<div class="pt-1 m-7 justify-start flex items-center">
-						<div class="hidden md:block w-12 h-12 rounded-full  bg-slate-400/50 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-white-400/50 mr-2 justify-center items-center">
-						<img class="m-auto" draggable="false" src="../../public/sticker.png" alt="">
-						</div>
-						<p class="font-sans text-sm">
-							Hi, I'm Mohsen <br>
-							<span class="hidden md:block text-[12px]">Videographer | Photographer</span>
-						</p>
-						<div class="flex items-center ml-auto">
-							<div class="w-9 h-9 rounded-md bg-neutral-50/5 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur  mr-2 flex justify-center items-center">
-								<svg class="w-5 h-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-							</div>
-							<div class="w-9 h-9 rounded-md bg-neutral-50/5 hover:bg-neutral-50/5 hover:border-gray-500/90 duration-200 backdrop-blur mr-2 flex justify-center items-center">
-								<svg class="h-5 w-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>							</div>
-							</div>
-					</div>
-					<div class="m-3 ml-5 justify-center items-center">
-						<div class="font-sans text-2xl ml-3 mb-5">Video Production, Inspired by Life</div>
-						<p class="font-normal text-sm text-justify text-[#919398] sm:ml-3 sm:mr-6 mb-5">
-							I'm a creative video producer with 8 years of industry experience.
-							My expertise lies in storytelling and collaborating with teams to craft compelling content.
-							I'm passionate about delivering high-quality videos that deeply connect with audiences, from the earliest concept stages through to post-production.
-							Let's connect and discuss how we can enhance your next project together.
-						</p>
-					</div>
-				</div>
-				<div class="md:col-span-1 md:row-span-1 sm:h-80 sm:col-span-1  sm:block col-span-full hover:scale-105 duration-300 relative overflow-hidden bg-blue-100/30 border border-gray-500/50 backdrop-blur rounded-[30px] rounded-bl-[4px] rounded-tr-xl justify-center items-end">
-						<img class="h-full object-cover" draggable="false" src="../../public/M.jpg" />
-					</div>
-				<div class="h-80 overflow-hidden md:col-span-1 md:row-span-1 sm:col-span-2 col-span-full bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex justify-center items-center relative rounded-bl-xl rounded-br-[4px] rounded-tr-[4px]">
-					<div class="absolute top-0 left-0 p-7 text-white font-semibold"> Currently I'm Working at <a href="https://www.mobile140.com" target="_blank" class="text-[#27a9df]">140</a>.
-						<p class="font-sans text-xs mt-3 text-[#919398]">Lorem ipsum dolor sit amet consectetur ametreed.</p>
-					</div>
-					<img class="h-full object-cover" src="./c.png" />
-				</div>
-				<div class="h-80 md:col-span-2 md:row-span-1 overflow-hidden col-span-3 relative bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] flex flex-col justify-center items-start  rounded-l-[4px] rounded-br-xl ">
-					<div class="flex flex-row font-sans z-10 gap-2 p-[8px] sm:pt-4 sm:p-0  sm:pl-14 justify-start items-center">
-						Youtube
-						<svg class="hover:fill-white duration-200 hover:-translate-y-1"
-						 stroke="currentColor" fill="#6c757d" stroke-width="0" viewBox="0 0 16 16" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"></path></svg>
-					</div>
-					<p class="font-sans z-10 text-xs sm:pl-14 p-[8px] sm:p-0 text-[11px] text-[#919398] relative">Lorem ipsum dolor sit adipisicing elit.</p>
-					<div class="w-full md:w-[100%] h-full relative m-auto">
-						<video class="absolute bottom-0 w-[90%] blur-xl filter"
-						muted
-						loop
-						autoplay
-						>
-							<source src="./Macl.mp4" type="video/mp4"/>
-						</video>
-						<video class="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-t-xl w-[80%] m-auto"
-						muted
-						loop
-						autoplay
-						>
-							<source src="./Macl.mp4" type="video/mp4"/>
-						</video>
-					</div>
-				</div>
-				<div class="h-80 md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] justify-center items-center rounded-l-xl rounded-br-[4px]">
-				</div>
-				<div class="h-80 md:col-span-1 md:row-span-1 col-span-3 overflow-hidden bg-neutral-50/5 border border-gray-600/50 backdrop-blur rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
-					<!-- <img class="absolute top-[5px] right-0 z-10 h-full animate-floatUpDown pointer-events-none" draggable="false" src="../../public/Group 7.png" /> -->
-					<div class="absolute top-0 left-0 p-5 text-white font-normal">
-						Contact me<br/>
-						<span class="font-normal text-sm text-justify text-[#919398]">Make a Call or email.</span>
-					</div>
-					<div class="absolute left-0 pb-9 pl-11 lg:pl-14 flex flex-col items-center p-3 text-white">
-						<div class="w-14 h-14 rounded-md rounded-b-none bg-neutral-50/5 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-gray-400/30 mr-2 flex justify-center items-center">
-							<svg class="w-6 h-6" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M2 8.99374C2 5.68349 4.67654 3 8.00066 3H15.9993C19.3134 3 22 5.69478 22 8.99374V21H8.00066C4.68659 21 2 18.3052 2 15.0063V8.99374ZM14 11V13H16V11H14ZM8 11V13H10V11H8Z"></path></svg>						</div>
-						<div class="w-14 h-14 rounded-md rounded-t-none bg-neutral-50/5 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-gray-400/30 mr-2 flex justify-center items-center">
-							<svg class="w-5 h-5" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg>						</div>
-						</div>
-				</div>
+				<GridOne />
+				<GridTwo />
+				<GridThree />
+				<GridFour client:load />
+				<GridFive />
+				<GridSix />
 			</div>
 		</div>
-		<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-			<svg
-				class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem] animate-slide"
-				viewBox="0 0 1155 678">
-				<path
-					fill="url(#b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1)"
-					fill-opacity=".3"
-					d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
-				</path>
-				<defs>
-					<linearGradient
-						id="b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1"
-						x1="1155.49"
-						x2="-78.208"
-						y1=".177"
-						y2="474.645"
-						gradientUnits="userSpaceOnUse">
-						<stop stop-color="#003049">
-							<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
-						</stop>
-						<stop offset="1" stop-color="#003049">
-							<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
-						</stop>
-					</linearGradient>
-				</defs>
-			</svg>
-		</div>
+	<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+		<svg
+			class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem] animate-slide"
+			viewBox="0 0 1155 678">
+			<path
+				fill="url(#b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1)"
+				fill-opacity=".3"
+				d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z">
+			</path>
+			<defs>
+				<linearGradient
+					id="b9e4a85f-ccd5-4151-8e84-ab55c66e5aa1"
+					x1="1155.49"
+					x2="-78.208"
+					y1=".177"
+					y2="474.645"
+					gradientUnits="userSpaceOnUse">
+					<stop stop-color="#003049">
+						<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
+					</stop>
+					<stop offset="1" stop-color="#003049">
+						<animate attributeName="stop-color" values="#003049; #EAE2B7; #003049" dur="5s" repeatCount="indefinite"></animate>
+					</stop>
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
 	</main>
 </Layout>
 
