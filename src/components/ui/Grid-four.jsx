@@ -14,14 +14,14 @@ const GridFour = () => {
 			loop
 			autoPlay
 			>
-				<source src="./Macl.mp4" type="video/mp4"/>
+				<source src="./Teaser.mp4" type="video/mp4"/>
 			</video>
 			<video class="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-t-xl w-[80%] m-auto"
 			muted
 			loop
 			autoPlay
 			>
-				<source src="./Macl.mp4" type="video/mp4"/>
+				<source src="./Teaser.mp4" type="video/mp4"/>
 			</video>
 		</div>
 	</div>
