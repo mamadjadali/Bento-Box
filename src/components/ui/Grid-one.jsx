@@ -4,7 +4,7 @@ const GridOne = () => {
     <div class="sm:h-80 md:col-span-2 md:row-span-1 col-span-full  flex-col border border-gray-600/50 bg-neutral-50/5 backdrop-blur rounded-[30px] flex rounded-tl-xl rounded-br-[4px]">
 		<div class="pt-1 m-7 justify-start flex items-center">
 			<div class="hidden md:block w-12 h-12 rounded-full  bg-slate-400/50 hover:bg-neutral-50/10 hover:border-gray-300/90 duration-200 backdrop-blur border border-white-400/50 mr-2 justify-center items-center">
-			<img class="m-auto" draggable="false" src="../../public/sticker.png" alt="" />
+			<img class="m-auto" draggable="false" src="./sticker.png" alt="" />
 			</div>
 			<p class="font-sans text-sm">
 				Hi, I'm Mohsen <br />
