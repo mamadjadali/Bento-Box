@@ -13,7 +13,7 @@ const GridFour = () => {
 		</div>
 		<p className="font-sans z-10 text-xs sm:pl-14 p-[8px] sm:p-0 text-[11px] text-[#919398] relative">{Video.subTitle}</p>
 		<div className="w-full md:w-[100%] h-full relative m-auto">
-			<video className="absolute bottom-0 w-[90%] blur-xl filter"
+			<video className="absolute bottom-0 w-[100%] blur-xl filter"
 			muted
 			loop
 			autoPlay
