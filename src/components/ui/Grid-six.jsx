@@ -4,7 +4,7 @@ import Social from "../../data/Social.json"
 const GridSix = () => {
   return (
     <div id="contact" className="h-80 md:col-span-1 md:row-span-1 col-span-3 overflow-hidden bg-neutral-50/5 border border-gray-600/50 backdrop-blur rounded-[30px] flex justify-center items-end relative rounded-bl-[4px] rounded-tr-xl">
-		{/* <img className="absolute top-[5px] right-0 z-10 h-full animate-floatUpDown pointer-events-none" draggable="false" src="../../public/Group 7.png" /> */}
+		<img className="absolute right-0 z-10 h-full object-cover pointer-events-none" draggable="false" src="./bg.png" />
 		<div className="absolute top-0 left-0 p-5 text-white font-normal">
 				{Contactme.title}<br/>
 			<span className="font-normal text-sm text-justify text-[#919398]">{Contactme.sub}</span>
