@@ -7,5 +7,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://mamadjadali.github.io',
-  base: '/Bento-Box',
+  base: '/Bento-box',
 });
