@@ -1,8 +1,10 @@
 ---
 import NavBar from '../components/NavBar.astro';
+import GridEight from '../components/ui/Grid-eight';
 import GridFive from '../components/ui/Grid-five';
 import GridFour from '../components/ui/Grid-four';
 import GridOne from '../components/ui/Grid-one';
+import GridSeven from '../components/ui/Grid-seven';
 import GridSix from '../components/ui/Grid-six';
 import GridThree from '../components/ui/Grid-three';
 import GridTwo from '../components/ui/Grid-two';
@@ -41,8 +43,10 @@ import Layout from '../layouts/Layout.astro';
 				<GridTwo />
 				<GridThree />
 				<GridFour client:load />
-				<GridFive client:load />
+				<GridSeven client:load/>
+				<GridEight client:load/>
 				<GridSix />
+				<GridFive client:load />
 			</div>
 		</div>
 	<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
