@@ -7,7 +7,7 @@ const GridThree = () => {
 		<div className="absolute top-0 left-0 p-7 text-white font-semibold">{Current.title}<a href="https://www.mobile140.com" target="_blank" className="text-[#27a9df]">140</a>.
 			<p className="font-sans text-xs mt-3 text-[#919398]">{Current.subTitle}</p>
 		</div>
-		<img className="h-full object-cover" src="./c.png" />
+		<img className="h-full object-cover" src="./c.svg" />
 	</div>
   )
 }

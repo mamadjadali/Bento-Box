@@ -9,7 +9,7 @@ const GridFour = () => {
 			{Video.title}
 			<a href={Social.Youtube}>
 			<svg className="hover:fill-white duration-200 hover:-translate-y-1"
-				stroke="currentColor" fill="#6c757d" stroke-width="0" viewBox="0 0 16 16" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"></path></svg>
+				stroke="currentColor" fill="#6c757d" strokeWidth="0" viewBox="0 0 16 16" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"></path></svg>
 			</a>
 		</div>
 		<p className="font-sans z-10 text-xs sm:pl-14 p-[8px] sm:p-0 text-[11px] text-[#919398] relative">{Video.subTitle}</p>
