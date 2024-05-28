@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { cn } from "../../lib/utils";
 import AnimatedShinyText from '../magicui/animated-shiny-text';
+import { BorderBeam } from "../magicui/border-beam";
 
 const GridEight = () => {
   return (
@@ -18,6 +19,7 @@ const GridEight = () => {
         </AnimatedShinyText>
       </div>
     </div>
+    <BorderBeam size={150} duration={12} delay={9}/>
     </div>
   )
 }
