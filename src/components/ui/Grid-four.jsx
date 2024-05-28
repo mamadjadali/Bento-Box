@@ -1,5 +1,6 @@
 import Social from "../../data/Social.json"
 import Video from "../../data/Video.json"
+import teaser from "../../assets/Teaser.mp4"
 
 const GridFour = () => {
   return (
@@ -18,14 +19,15 @@ const GridFour = () => {
 			loop
 			autoPlay
 			>
-				<source src="./Teaser.mp4" type="video/mp4"/>
+				<source src={teaser} type="video/mp4"/>
 			</video>
 			<video className="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-t-xl w-[80%] m-auto"
 			muted
 			loop
 			autoPlay
+			controls
 			>
-				<source src="./Teaser.mp4" type="video/mp4"/>
+				<source src={teaser} type="video/mp4"/>
 			</video>
 		</div>
 	</div>
