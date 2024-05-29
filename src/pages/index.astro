@@ -1,4 +1,5 @@
 ---
+import MinimalSocialsFooter from '../components/magicui/Footer';
 import NavBar from '../components/NavBar';
 import GridEight from '../components/ui/Grid-eight';
 import GridFive from '../components/ui/Grid-five';
@@ -37,7 +38,7 @@ import Layout from '../layouts/Layout.astro';
 		</svg>
 	</div>
 		<NavBar/>
-		<div class="flex w-full items-center justify-center p-6">
+		<div class="flex w-full items-center justify-center p-6 mb-20">
 			<div class="grid h-full w-full grid-cols-3 md:grid-rows-4 gap-3">
 				<GridOne />
 				<GridTwo />
@@ -49,6 +50,7 @@ import Layout from '../layouts/Layout.astro';
 				<GridFive client:load />
 			</div>
 		</div>
+		<MinimalSocialsFooter/>
 	<div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
 		<svg
 			class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem] animate-slide"
