@@ -1,7 +1,7 @@
 
 const GridSeven = () => {
   return (
-    <div className="h-80 overflow-hidden md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] justify-center items-center rounded-bl-xl rounded-tr-[4px]">
+    <div className="h-50 sm:h-80 overflow-hidden md:col-span-2 md:row-span-1 col-span-3 bg-neutral-50/5 backdrop-blur border border-gray-600/50 rounded-[30px] justify-center items-center rounded-bl-xl rounded-tr-[4px]">
       <div id="gallery" class="relative w-full h-full" data-carousel="slide">
           {/* <!-- Carousel wrapper --> */}
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
