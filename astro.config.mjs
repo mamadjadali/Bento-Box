@@ -12,6 +12,6 @@ export default defineConfig({
       },
     }),
   ],
-  site: 'https://mohsenpb.me',
+  site: 'https://mohsenpb.me/',
   base: '/',
 });
