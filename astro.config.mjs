@@ -12,6 +12,6 @@ export default defineConfig({
       },
     }),
   ],
-  site: 'https://mamadjadali.github.io',
-  base: '/Bento-Box',
+  site: 'https://mohsenpb.me',
+  base: '/',
 });
