@@ -11,11 +11,20 @@ export default {
 				sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
 			  },
 			  animation: {
+				"meteor-effect": "meteor 5s linear infinite",
 				ripple: "ripple 3400ms ease infinite",
 				shimmer: "shimmer 8s infinite",
 				"border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
 			  },
 			  keyframes: {
+				meteor: {
+					"0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+					"70%": { opacity: "1" },
+					"100%": {
+					  transform: "rotate(215deg) translateX(-500px)",
+					  opacity: "0",
+					},
+				},
 				ripple: {
 				  "0%, 100%": {
 					transform: "translate(-50%, -50%) scale(1)",
