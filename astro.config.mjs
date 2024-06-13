@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [tailwind(), react(),
     partytown({
       config: {
+        debug: false,
         forward: ["dataLayer.push"],
       },
     }),
