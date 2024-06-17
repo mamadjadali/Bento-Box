@@ -9,6 +9,7 @@ import GridSeven from '../components/ui/Grid-seven';
 import GridSix from '../components/ui/Grid-six';
 import GridThree from '../components/ui/Grid-three';
 import GridTwo from '../components/ui/Grid-two';
+import Demo from '../components/ui/demo';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -39,11 +40,12 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 		<NavBar/>
 		<div class="flex w-full items-center justify-center p-6 mb-20">
-			<div class="grid h-full w-full grid-cols-3 md:grid-rows-4 gap-3">
+			<div class="grid h-full w-full grid-cols-3 md:grid-rows-5 gap-3">
 				<GridOne />
 				<GridTwo />
 				<GridThree />
 				<GridFour client:load />
+				<Demo/>
 				<GridSeven client:load/>
 				<GridEight client:load/>
 				<GridSix/>
